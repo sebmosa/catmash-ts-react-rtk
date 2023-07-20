@@ -1,27 +1,64 @@
-# vite-template-redux
+<h1  align="center">Cat Mash Application</h1>
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+<a  href="https://catmash-ts-react-rtk.onrender.com/"><img  src=""  title="catmash application"  alt="catmash application"></a>
 
-```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
+## Overview
+
+**Demo**
+
+<a  href="https://catmash-ts-react-rtk.onrender.com/"  target="_blank"> [https://catmash-ts-react-rtk.onrender.com/](https://catmash-ts-react-rtk.onrender.com/)</a>
+
+## Packages
+
+- Node.js
+
+- React 18.2
+
+- Redux Toolkit 1.8.1
+
+- TypeScript 5.0.2
+
+- Vite 4.0.0
+
+- Vitest 0.30.1
+
+- React Router 6.14.2
+
+## Architecture
+
+Based on Vite Redux Toolkit starter with React Router for routing.
+
+## Running the project
+
+Clone this repository :
+
+```
+git clone https://github.com/sebmosa/catmash-ts-react-rtk
+
+cd catmash-ts-react-rtk
 ```
 
-## Goals
+To install packages :
 
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
+```
+pnpm install
+```
 
-## Scripts
+When installation is complete, run the project with:
 
-- `dev`/`start` - start dev server and open browser
-- `build` - build for production
-- `preview` - locally preview production build
-- `test` - launch test runner
+```
+pnpm dev
+```
 
-## Inspiration
+## Deployment
 
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+- Deployed in static site on https://render.com/
+
+## Contact
+
+<a  href="https://www.linkedin.com/in/s%C3%A9bastien-mosagna-85a1a29/"  target="_blank"> <img src="https://res.cloudinary.com/dr9kwlfuq/image/upload/v1683577491/Gamepad_TS_Backend/LI-In-Bug_afyv46.png"
+width="40"
+/></a>
+<a  href="mailto:sebmosa@gmail.com"  target="_blank"> <img src="https://res.cloudinary.com/dr9kwlfuq/image/upload/v1683577816/Gamepad_TS_Backend/Gmail_icon_ptcfsz.png"
+width="40"
+/></a>

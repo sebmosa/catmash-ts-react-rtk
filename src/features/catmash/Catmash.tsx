@@ -1,10 +1,12 @@
 import { useState } from "react"
-import { useAppDispatch } from "../../app/hooks"
+import { useAppDispatch, useAppSelector } from "../../app/hooks"
 import { getRandomCompetitors } from "../../services/getRandomCompetitors/getRandomCompetitors"
 import cats from "../../data/cats.json"
 import { won, counted, Winner } from "./catmashSlice"
 import { CatCard } from "../../components/CatCard/CatCard"
 import styles from "./Catmash.module.css"
+import { ResultButton } from "../../components/ResultButton/ResultButton"
+import { RootState } from "../../app/store"
 export const Catmash = () => {
   const [_, setWinner] = useState<Winner>()
   const competitors = getRandomCompetitors(cats.images)
@@ -20,6 +22,8 @@ export const Catmash = () => {
     url: competitors[1].url,
     points: 0,
   }
+
+  const winners = useAppSelector((state: RootState) => state.winnersList)
 
   const dispatch = useAppDispatch()
 
@@ -51,6 +55,7 @@ export const Catmash = () => {
           <CatCard image={second.url} alt={second.id} />
         </div>
       </div>
+      <ResultButton counter={winners.counter} />
     </>
   )
 }

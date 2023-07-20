@@ -8,7 +8,7 @@ export const Results = () => {
         <h1 className="title">CAT MASH</h1>
         <section className="container">
           <Link className="backlink" to="/">
-            {`< Back to the match !!!`}
+            {`< Retourner au match !`}
           </Link>
           <Result />
         </section>

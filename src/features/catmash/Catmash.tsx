@@ -2,11 +2,12 @@ import { useState } from "react"
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 import { getRandomCompetitors } from "../../services/getRandomCompetitors/getRandomCompetitors"
 import cats from "../../data/cats.json"
-import { won, counted, Winner } from "./catmashSlice"
+import { won, counted, reseted, Winner } from "./catmashSlice"
 import { CatCard } from "../../components/CatCard/CatCard"
 import styles from "./Catmash.module.css"
 import { ResultButton } from "../../components/ResultButton/ResultButton"
 import { RootState } from "../../app/store"
+import { ResetButton } from "../../components/ResetButton/ResetButton.js"
 export const Catmash = () => {
   const [_, setWinner] = useState<Winner>()
   const competitors = getRandomCompetitors(cats.images)
@@ -44,6 +45,9 @@ export const Catmash = () => {
           }}
         >
           <CatCard image={first.url} alt={first.id} />
+        </div>
+        <div className={styles.middle}>
+          <ResetButton onclick={() => dispatch(reseted())} />
         </div>
         <div
           className={styles.right}

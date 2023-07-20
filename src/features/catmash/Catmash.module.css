@@ -21,3 +21,17 @@
   background-color: hsl(0, 0%, 87%);
   height: 100%;
 }
+
+.middle {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer; 
+}
+
+@media (min-width: 768px) {
+    .middle {
+        top: 50%;
+    }
+}

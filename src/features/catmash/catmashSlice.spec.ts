@@ -1,4 +1,9 @@
-import catmashReducer, { CatmashState, won, counted } from "./catmashSlice.js"
+import catmashReducer, {
+  CatmashState,
+  won,
+  counted,
+  reseted,
+} from "./catmashSlice.js"
 
 describe("catmash reducer", () => {
   const initialState: CatmashState = {
@@ -38,5 +43,10 @@ describe("catmash reducer", () => {
   it("should handle increment", () => {
     const actual = catmashReducer(initialState, counted())
     expect(actual.counter).toEqual(1)
+  })
+
+  it("should be reseted", () => {
+    const actual = catmashReducer(initialState, reseted())
+    expect(actual.winners.length).toEqual(0)
   })
 })

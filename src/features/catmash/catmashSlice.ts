@@ -35,9 +35,13 @@ const catmashSlice = createSlice({
     counted: (state) => {
       state.counter += 1
     },
+    reseted: (state) => {
+      state.counter = 0
+      state.winners = []
+    },
   },
 })
 
-export const { won, counted } = catmashSlice.actions
+export const { won, counted, reseted } = catmashSlice.actions
 
 export default catmashSlice.reducer

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(206, 23%, 84%);
+  height: 100%;
+}
+
+.right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 87%);
+  height: 100%;
+}

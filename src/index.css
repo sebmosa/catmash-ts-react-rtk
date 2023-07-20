@@ -5,9 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #3d4f61;
+  background-color: aliceblue;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App .title {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  text-align: center;
+
+  font-size: 3rem;
+}
+
+.Result .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backlink {
+  text-align: center;
+  text-decoration: none;
+  color: hsl(38, 23%, 46%);
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }

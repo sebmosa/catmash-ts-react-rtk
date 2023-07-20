@@ -13,14 +13,14 @@ export const Result = () => {
     }))
     .sort((a, b) => b.points - a.points)
 
-  const maxScore = winners[0].points
+  const maxScore = winners.length > 0 ? winners[0].points : 0
 
-  const isEmpty = winnersList.winners.length === 0
+  const isEmpty = winners.length === 0
 
   return (
     <>
       {isEmpty ? (
-        <p className="info">Commencer une battle pour voir les résultats</p>
+        <p className="info">Commencer un match pour voir les résultats</p>
       ) : (
         <ScoreTable competitors={winners} max={maxScore} />
       )}

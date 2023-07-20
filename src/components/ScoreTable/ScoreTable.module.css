@@ -1,6 +1,6 @@
 .content {
   display: inline-block;
-  height: 66vh;
+  max-height: 66vh;
   border: 1px solid hsl(0, 0%, 87%);
   overflow-y: scroll;
   overflow-x: auto;

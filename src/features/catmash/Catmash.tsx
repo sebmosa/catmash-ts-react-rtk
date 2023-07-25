@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 import { getRandomCompetitors } from "../../services/getRandomCompetitors/getRandomCompetitors"
 import cats from "../../data/cats.json"

@@ -9,7 +9,6 @@ import { ResultButton } from "../../components/ResultButton/ResultButton"
 import { RootState } from "../../app/store"
 import { ResetButton } from "../../components/ResetButton/ResetButton.js"
 export const Catmash = () => {
-  const [_, setWinner] = useState<Winner>()
   const competitors = getRandomCompetitors(cats.images)
 
   const first = {
@@ -29,7 +28,6 @@ export const Catmash = () => {
   const dispatch = useAppDispatch()
 
   const handleClick = (selected: Winner) => {
-    setWinner(selected)
     dispatch(won(selected))
     dispatch(counted())
   }
@@ -39,8 +37,7 @@ export const Catmash = () => {
       <div className={styles.container}>
         <div
           className={styles.left}
-          onClick={(event) => {
-            event.preventDefault()
+          onClick={() => {
             handleClick(first)
           }}
         >
@@ -51,8 +48,7 @@ export const Catmash = () => {
         </div>
         <div
           className={styles.right}
-          onClick={(event) => {
-            event.preventDefault()
+          onClick={() => {
             handleClick(second)
           }}
         >

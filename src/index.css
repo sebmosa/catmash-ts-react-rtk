@@ -8,6 +8,7 @@ body {
   color: #3d4f61;
   background-color: aliceblue;
   overflow: hidden;
+  position: relative;
 }
 
 code {
@@ -23,8 +24,21 @@ code {
 
 .title {
   text-align: center;
-
   font-size: 3rem;
+}
+
+.notice {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 6rem;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+
+.notice-next {
+  display: block;
 }
 
 .Result .container {

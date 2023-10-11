@@ -6,20 +6,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #3d4f61;
-  background-color: aliceblue;
+  background-color: white;
   overflow: hidden;
   position: relative;
+  /* max-height: 100svh; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.main {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100svh;
+    background: linear-gradient(to right, hsl(206, 23%, 84%), hsl(206, 23%, 84%) 50%, hsl(0, 0%, 87%) 50%, hsl(0, 0%, 87%));
 }
 
-.App .title {
-  position: absolute;
-  left: 0;
-  right: 0;
+.Result .main {
+  align-items: center;
 }
 
 .title {
@@ -28,29 +30,33 @@ code {
 }
 
 .notice {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 6rem;
   text-align: center;
   font-size: 1.3rem;
   line-height: 1.7rem;
+  flex: 1;
 }
 
 .notice-next {
   display: block;
 }
 
-.Result .container {
+.result {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .backlink {
-  text-align: center;
-  text-decoration: none;
-  color: hsl(38, 23%, 45%);
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
   font-size: 1.3rem;
   margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: hsl(208, 100%, 97%);
+  color: hsl(38, 23%, 41%);
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 2rem;
+  cursor: pointer;
 }

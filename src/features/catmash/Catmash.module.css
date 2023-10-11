@@ -1,7 +1,12 @@
+.reset {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: flex;
-  height: 100vh;
   cursor: pointer;
+  height: 30vh;
 }
 
 .left {
@@ -9,7 +14,6 @@
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: hsl(206, 23%, 84%);
   height: 100%;
 }
 
@@ -18,20 +22,17 @@
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: hsl(0, 0%, 87%);
   height: 100%;
 }
 
-.middle {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer; 
-}
-
 @media (min-width: 768px) {
-    .middle {
-        top: 50%;
+  .reset {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+  }
+    .container {
+        height: 60vh;
     }
 }

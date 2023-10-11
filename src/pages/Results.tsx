@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom"
 import { Result } from "../features/catmash/Result"
+import ArrowLeft from "../assets/svg/arrow-left.svg"
 
 export const Results = () => {
   return (
     <div className="Result">
       <main className="main">
         <h1 className="title">CAT MASH</h1>
-        <section className="container">
-          <Link className="backlink" to="/">
-            {`< Retourner au match !`}
-          </Link>
-          <Result />
-        </section>
+        <Link className="backlink" to="/">
+          <img src={ArrowLeft} alt="back to app page" />
+          {`Retourner au match`}
+        </Link>
+        <Result />
       </main>
     </div>
   )

@@ -33,27 +33,27 @@ export const Catmash = () => {
 
   return (
     <>
-      <div className={styles.container}>
-        <div
+      <section className={styles.reset}>
+        <ResetButton onclick={() => dispatch(reseted())} />
+      </section>
+      <section className={styles.container}>
+        <aside
           className={styles.left}
           onClick={() => {
             handleClick(first)
           }}
         >
           <CatCard image={first.url} alt={first.id} />
-        </div>
-        <div className={styles.middle}>
-          <ResetButton onclick={() => dispatch(reseted())} />
-        </div>
-        <div
+        </aside>
+        <aside
           className={styles.right}
           onClick={() => {
             handleClick(second)
           }}
         >
           <CatCard image={second.url} alt={second.id} />
-        </div>
-      </div>
+        </aside>
+      </section>
       <ResultButton counter={winners.counter} />
     </>
   )

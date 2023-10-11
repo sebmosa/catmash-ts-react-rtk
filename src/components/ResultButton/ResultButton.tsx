@@ -7,11 +7,11 @@ interface Counter {
 
 export const ResultButton = ({ counter }: Counter) => {
   return (
-    <div className={styles.container}>
+    <section className={styles.result}>
       <Link className={styles.link} to="results">
         Voir les plus beaux chats
-        <div className={styles.counter}>{counter} Votes</div>
+        <p className={styles.counter}>{counter} Votes</p>
       </Link>
-    </div>
+    </section>
   )
 }

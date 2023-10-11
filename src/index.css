@@ -37,6 +37,8 @@ body {
 
 .info {
   flex: 1;
+  width: 360px;
+  text-wrap: balance;
 }
 
 .notice-next {
@@ -62,4 +64,10 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 2rem;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .info{
+    width: auto;
+  }
 }

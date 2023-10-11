@@ -20,7 +20,7 @@ export const Result = () => {
   return (
     <>
       {isEmpty ? (
-        <p className="notice">Commencer un match pour voir les résultats</p>
+        <p className="info">Commencer un match pour voir les résultats</p>
       ) : (
         <ScoreTable competitors={winners} max={maxScore} />
       )}

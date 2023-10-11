@@ -29,10 +29,13 @@ body {
   font-size: 3rem;
 }
 
-.notice {
+.notice, .info {
   text-align: center;
   font-size: 1.3rem;
   line-height: 1.7rem;
+}
+
+.info {
   flex: 1;
 }
 

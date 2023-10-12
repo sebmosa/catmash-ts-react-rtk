@@ -1,10 +1,8 @@
 <h1  align="center">Cat Mash Application</h1>
 
-<p align="center>
 
-<img  src="https://res.cloudinary.com/dr9kwlfuq/image/upload/v1697131346/Catmash_TS_React_RTK/m-gtb-catmash-homepage_pyk2tz.jpg"  title="catmash application"  alt="catmash application">
+<img align="center" src="https://res.cloudinary.com/dr9kwlfuq/image/upload/v1697131346/Catmash_TS_React_RTK/m-gtb-catmash-homepage_pyk2tz.jpg"  title="catmash application"  alt="catmash application">
 
-</p>
 
 ## Overview
 

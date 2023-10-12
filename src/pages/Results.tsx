@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { Result } from "../features/catmash/Result"
-import ArrowLeft from "../assets/svg/arrow-left.svg"
+import ArrowLeft from "../../public/arrow-left.svg"
 
 export const Results = () => {
   return (

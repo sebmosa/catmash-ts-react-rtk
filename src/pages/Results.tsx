@@ -8,7 +8,7 @@ export const Results = () => {
       <main className="main">
         <h1 className="title">CAT MASH</h1>
         <Link className="backlink" to="/">
-          <ArrowLeft />
+          <ArrowLeft className="backicon" />
           {`Retourner au match`}
         </Link>
         <Result />

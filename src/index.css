@@ -44,7 +44,7 @@ body {
 .info {
   flex: 1;
   width: 360px;
-  text-wrap: balance;
+  /* text-wrap: balance; */
 }
 
 .notice-next {
@@ -57,11 +57,16 @@ body {
   align-items: center;
 }
 
+.backicon {
+  padding-right: 0.5rem;
+}
+
 .backlink {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 220px;
   font-size: 1.3rem;
+  line-height: 1;
   margin-bottom: 2rem;
   padding: 1rem;
   background-color: hsl(208, 100%, 97%);

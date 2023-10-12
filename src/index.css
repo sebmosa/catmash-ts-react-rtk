@@ -14,10 +14,16 @@ body {
 
 .main {
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100svh;
-    background: linear-gradient(to right, hsl(206, 23%, 84%), hsl(206, 23%, 84%) 50%, hsl(0, 0%, 87%) 50%, hsl(0, 0%, 87%));
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100svh;
+  background: linear-gradient(
+    to right,
+    hsl(206, 23%, 84%),
+    hsl(206, 23%, 84%) 50%,
+    hsl(0, 0%, 87%) 50%,
+    hsl(0, 0%, 87%)
+  );
 }
 
 .Result .main {
@@ -29,7 +35,8 @@ body {
   font-size: 3rem;
 }
 
-.notice, .info {
+.notice,
+.info {
   text-align: center;
   font-size: 1.3rem;
   line-height: 1.7rem;
@@ -67,7 +74,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .info{
+  .info {
     width: auto;
   }
 }

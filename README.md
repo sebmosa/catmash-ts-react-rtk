@@ -1,6 +1,10 @@
 <h1  align="center">Cat Mash Application</h1>
 
-<a  href="https://catmash-ts-react-rtk.onrender.com/" align="center"><img  src="https://res.cloudinary.com/dr9kwlfuq/image/upload/v1697131346/Catmash_TS_React_RTK/m-gtb-catmash-homepage_pyk2tz.jpg"  title="catmash application"  alt="catmash application"></a>
+<p align="center>
+
+<a href="https://catmash-ts-react-rtk.onrender.com/" ><img  src="https://res.cloudinary.com/dr9kwlfuq/image/upload/v1697131346/Catmash_TS_React_RTK/m-gtb-catmash-homepage_pyk2tz.jpg"  title="catmash application"  alt="catmash application"></a>
+
+</p>
 
 ## Overview
 

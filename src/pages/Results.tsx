@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { Result } from "../features/catmash/Result"
-import ArrowLeft from "../../public/arrow-left.svg"
+import ArrowLeft from "../assets/arrow-left.svg?react"
 
 export const Results = () => {
   return (
@@ -8,7 +8,7 @@ export const Results = () => {
       <main className="main">
         <h1 className="title">CAT MASH</h1>
         <Link className="backlink" to="/">
-          <img src={ArrowLeft} alt="back to app page" />
+          <ArrowLeft />
           {`Retourner au match`}
         </Link>
         <Result />

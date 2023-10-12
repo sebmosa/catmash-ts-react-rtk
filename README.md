@@ -1,6 +1,6 @@
 <h1  align="center">Cat Mash Application</h1>
 
-<a  href="https://catmash-ts-react-rtk.onrender.com/"><img  src="https://res.cloudinary.com/dr9kwlfuq/image/upload/v1697130271/Catmash_TS_React_RTK/m-gtb-catmash-homepage_diraj1.jpg"  title="catmash application"  alt="catmash application"></a>
+<a  href="https://catmash-ts-react-rtk.onrender.com/" align="center"><img  src="https://res.cloudinary.com/dr9kwlfuq/image/upload/v1697131346/Catmash_TS_React_RTK/m-gtb-catmash-homepage_pyk2tz.jpg"  title="catmash application"  alt="catmash application"></a>
 
 ## Overview
 
@@ -27,7 +27,6 @@ Full responsive demo of Facemash with cats
 - Vite-plugin-svgr 4.1.0
 
 - React Router 6.14.2
-
 
 ## Architecture
 

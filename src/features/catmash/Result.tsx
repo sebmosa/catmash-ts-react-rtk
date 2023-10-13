@@ -24,6 +24,7 @@ export const Result = () => {
       ) : (
         <ScoreTable competitors={winners} max={maxScore} />
       )}
+      <p className="copyright">made by Sebmosa</p>
     </>
   )
 }
